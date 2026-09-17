@@ -1,0 +1,4 @@
+model\Kendaraan.class
+com\mycompany\rentalkendaraan\RentalKendaraan.class
+model\Motor.class
+model\Mobil.class
