@@ -126,8 +126,68 @@ public class Mobil extends Kendaraan {
 
 ---
 
-## 🖼️ Tangkapan Layar Program
-![Screenshot Menu Utama](screenshot/menu.png)
+## 🖼️ Dokumentasi Program (Screenshot & Penjelasan)
 
+Berikut adalah dokumentasi hasil pengujian program beserta penjelasan dari setiap tahapan yang dijalankan.
+
+### 1. Tampilan Menu Utama
+
+![Menu Utama](screenshot/menu.png)
+
+Gambar di atas menunjukkan tampilan awal program saat pertama kali dijalankan. Program menampilkan judul aplikasi beserta daftar menu yang dapat dipilih oleh pengguna, mulai dari menambah data kendaraan hingga keluar dari program. Pada tahap ini, sistem juga telah memuat dua data kendaraan awal (Toyota Avanza dan Honda Beat) sebagai contoh data yang tersedia secara *default*.
 
 ---
+
+### 2. Menambah Data Kendaraan
+
+![Tambah Kendaraan](screenshot/tambah-kendaraan.png)
+
+Gambar ini menampilkan proses penambahan data kendaraan baru melalui menu nomor 1. Pengguna diminta memasukkan jenis kendaraan (Mobil atau Motor), lalu mengisi data seperti nama kendaraan, plat nomor, harga sewa per hari, dan atribut spesifik sesuai jenisnya (jumlah kursi untuk Mobil, kapasitas CC untuk Motor). Setelah data berhasil diinput, program menampilkan pesan konfirmasi bahwa kendaraan baru telah berhasil ditambahkan ke dalam daftar.
+
+---
+
+### 3. Menampilkan Seluruh Data Kendaraan
+
+![Lihat Semua Kendaraan](screenshot/lihat-kendaraan.png)
+
+Gambar ini memperlihatkan hasil dari menu nomor 2, yaitu daftar seluruh kendaraan yang tersimpan dalam sistem. Setiap baris menampilkan informasi lengkap kendaraan, meliputi plat nomor, nama kendaraan, harga sewa per hari, status ketersediaan (Tersedia/Disewa), serta nama penyewa jika kendaraan sedang disewa. Bagian ini membuktikan bahwa method `tampilkanInfoMobil()` dan `tampilkanInfoMotor()` berjalan dengan benar, termasuk pemanggilan `super.tampilkanInfo()` dari superclass `Kendaraan`. Dapat dilihat bahwa Honda PCX yang sebelumnya saya buat terlihat pada bagian ini.
+
+---
+
+### 4. Mengubah Harga Sewa Kendaraan
+
+![Update Harga Sewa](screenshot/update-harga.png)
+
+Gambar ini menunjukkan proses pembaruan data melalui menu nomor 3. Pengguna memasukkan plat nomor kendaraan yang ingin diubah harganya, kemudian memasukkan nilai harga sewa yang baru. Program akan memvalidasi input tersebut (harga tidak boleh bernilai negatif) sebelum memperbarui data dan menampilkan pesan bahwa harga sewa telah berhasil diperbarui.
+
+---
+
+### 5. Menghapus Data Kendaraan
+
+![Hapus Kendaraan](screenshot/update-harga.png)
+
+Gambar ini menampilkan proses penghapusan data melalui menu nomor 4. Pengguna memasukkan plat nomor kendaraan yang ingin dihapus, kemudian program mencari data tersebut dalam daftar dan menghapusnya jika ditemukan. Apabila plat nomor yang dimasukkan tidak terdaftar, program akan menampilkan pesan bahwa data tidak ditemukan.
+
+---
+
+### 6. Menyewa Kendaraan
+
+![Sewa Kendaraan](screenshot/sewa-kendaraan.png)
+
+Gambar ini memperlihatkan proses penyewaan kendaraan melalui menu nomor 5. Pengguna memasukkan plat nomor kendaraan yang ingin disewa beserta nama penyewa. Program terlebih dahulu memeriksa status kendaraan tersebut; apabila masih berstatus "Tersedia", maka status akan diubah menjadi "Disewa" dan nama penyewa akan tercatat pada data kendaraan tersebut.
+
+---
+
+### 7. Mengembalikan Kendaraan
+
+![Kembalikan Kendaraan](screenshot/kembalikan-kendaraan.png)
+
+Gambar ini menunjukkan proses pengembalian kendaraan melalui menu nomor 6. Setelah pengguna memasukkan plat nomor kendaraan yang dikembalikan, program akan memeriksa apakah kendaraan tersebut sedang berstatus "Disewa". Jika benar, status kendaraan akan dikembalikan menjadi "Tersedia" dan data nama penyewa akan dihapus (direset), menandakan kendaraan tersebut sudah dapat disewa kembali oleh penyewa lain.
+
+---
+
+### 8. Keluar dari Program
+
+![Keluar](screenshot/keluar.png)
+
+Gambar ini memperlihatkan output yang keluar jika user memilih opsi ke 7.
