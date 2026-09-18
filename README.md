@@ -127,6 +127,7 @@ public class Mobil extends Kendaraan {
 ---
 
 ## 🖼️ Tangkapan Layar Program
+![Screenshot Menu Utama](screenshot/menu.png)
 
 
 ---
